@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../styles/App.css';
+import Header from './Header';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Surf Serve</h1>
+        <Header />
       </div>
     );
   }
