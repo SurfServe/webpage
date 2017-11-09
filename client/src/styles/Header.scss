@@ -12,10 +12,30 @@ header {
 
 .hero-text-box {
   position: absolute;
-  width: 1140px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 4px;
 }
 
 .logo {
