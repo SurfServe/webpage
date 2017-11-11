@@ -4,6 +4,7 @@ import Header from './Header';
 import Mission from './Mission';
 import Projects from './Projects';
 import Partner from './Partner';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Mission />
         <Projects />
         <Partner />
+        <Footer />
       </div>
     );
   }
