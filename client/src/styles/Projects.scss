@@ -1,3 +1,23 @@
 .projects-section {
-    background-color: #f4f4f4; 
+  background-color: #f4f4f4;
+}
+
+.project-box {
+  padding: 1%;
+}
+
+.gallery-btn {
+  color: #555;
+  margin-top: 20px;
+  border: 1px solid #f1c40f;
+  border-radius: 15px;
+  padding: 4px;
+  width: 25%;
+  text-align: center;
+  &:hover {
+    background-color: #f1c40f;
+  }
+  &:active {
+    background-color: #d2aa0c;
+  }
 }
