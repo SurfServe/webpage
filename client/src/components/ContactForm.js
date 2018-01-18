@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withFormik } from 'formik';
 import "../styles/ContactForm.css";
 
 class ContactForm extends Component {
@@ -87,4 +88,10 @@ class ContactForm extends Component {
   }
 }
 
-export default ContactForm;
+export default  withFormik({
+  name: '',
+  email: '',
+  findUs: '',
+  newsletter: false,
+  message: '',
+})(ContactForm);
