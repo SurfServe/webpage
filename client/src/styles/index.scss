@@ -139,6 +139,20 @@ a:active {
 }
 
 /*----- BUTTONS -----*/
+.gallery-btn:link,
+.gallery-btn:visited {
+  color: #f1c40f;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #f1c40f;
+}
+
+.gallery-btn:hover,
+.gallery-btn:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s, color 0.3s;
+}
 
 .btn:link,
 .btn:visited,

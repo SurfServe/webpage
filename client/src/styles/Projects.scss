@@ -6,6 +6,12 @@
   padding: 1%;
 }
 
+.project-box p {
+  margin-top: 20px;
+  font-size: 90%;
+  line-height: 145%;
+}
+
 .location-photo {
   width: 100%;
   margin: 0;
@@ -32,20 +38,4 @@
   opacity: 0.7;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-}
-
-.gallery-btn {
-  color: #555;
-  margin-top: 20px;
-  border: 1px solid #f1c40f;
-  border-radius: 15px;
-  padding: 4px;
-  width: 25%;
-  text-align: center;
-  &:hover {
-    background-color: #f1c40f;
-  }
-  &:active {
-    background-color: #d2aa0c;
-  }
 }
