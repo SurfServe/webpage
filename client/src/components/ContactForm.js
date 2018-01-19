@@ -7,7 +7,6 @@ import "../styles/ContactForm.css";
 import { FIND_US_OPTIONS } from '../components/enums';
 
 const ContactForm = ({ values, handleChange, handleSubmit }) => {
-  console.log('VALUES', values);
   return (
     <div className="form-box section-contact-form">
       <div className="row">
@@ -17,7 +16,7 @@ const ContactForm = ({ values, handleChange, handleSubmit }) => {
       To learn more about volunteering, donating, or if you know of an organization in need of our help, please fill out this form.
       </p>
       <div className="row">
-        <form className="contact-form" action="#" method="post">
+        <form className="contact-form">
           <div className="row">
             <div className="col span-1-of-3">
               <label htmlFor="name">Name</label>
@@ -95,7 +94,7 @@ const ContactForm = ({ values, handleChange, handleSubmit }) => {
               <label>&nbsp;</label>
             </div>
             <div className="col span-2-of-3">
-              <input type="submit" value="Send it!" onSubmit={handleSubmit} />
+              <button type="button" onClick={handleSubmit}>Send it!</button>
             </div>
           </div>
         </form>
@@ -113,7 +112,7 @@ export default withFormik({
     message: '',
   }),
 
-  handleSubmit: values => {
+  handleSubmit: (values) => {
     console.log('Values', values);
   },
 })(ContactForm);
