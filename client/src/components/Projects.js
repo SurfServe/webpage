@@ -8,6 +8,12 @@ import "../styles/Projects.css";
 import NINOS_DE_LA_PROMES from '../assets/img/ninos-de-la-promesa.jpg';
 import ADDPTIVE_SURF from '../assets/img/addaptive-surf.jpg'
 
+// SURFSERVE IMAGES ARRAY
+import { SURFSERVE_IMGAGES } from '../assets/surfserve';
+
+// ADAPTIVE SURF IMAGES ARRAY
+import { ADAPTIVE_SURF_IMAGES } from '../assets/adaptive';
+
 class Projects extends Component {
   state = {
     photoIndex: 0,
@@ -16,11 +22,6 @@ class Projects extends Component {
   }
   render() {
     const { photoIndex, isOpen, images } = this.state;
-
-    const imagesArray = [
-      NINOS_DE_LA_PROMES,
-      ADDPTIVE_SURF,
-    ];
 
     const toggleOpen = (images) => {
       this.setState({ isOpen: true, images });
@@ -56,7 +57,7 @@ class Projects extends Component {
           </p>
         </div>
         <div className="row">
-          <div className="col span-1-of-2 project-box" onClick={() => toggleOpen(imagesArray)}>
+          <div className="col span-1-of-2 project-box" onClick={() => toggleOpen(SURFSERVE_IMGAGES)}>
             <h3>Ninos De La Promesa</h3>
             <div className="location-photo">
               <img src={NINOS_DE_LA_PROMES} alt="Ninos de la Promesa" />
@@ -66,7 +67,7 @@ class Projects extends Component {
               sexual abuse in the homes and streets of Tijuana.
             </p>
           </div>
-          <div className="col span-1-of-2 project-box">
+          <div className="col span-1-of-2 project-box" onClick={() => toggleOpen(ADAPTIVE_SURF_IMAGES)}>
             <h3>Addaptive Surf Camp</h3>
             <div className="location-photo">
               <img src={ADDPTIVE_SURF} alt="Addaptive surf" />
