@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Lightbox from 'react-image-lightbox';
+import { Paper } from 'react-md/lib';
 
 // STYLING
 import "../styles/Projects.css";

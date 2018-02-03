@@ -22,6 +22,12 @@ class Partner extends Component {
     return (
       <section className="partner-section">
         <div className="row">
+          <h2>Thank You</h2>
+          <p className="long-copy">
+            We are lucky to work with the following partners!
+          </p>
+        </div>
+        <div className="row">
           <Slider {...settings}>
             <div>
               <img src={PatagoniaLogo} alt="Patagonia logo" />
